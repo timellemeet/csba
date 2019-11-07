@@ -1,0 +1,29 @@
+version : '3'
+
+services:
+  mysql:
+    image: mysql:5.7.28
+    container_name: mysql
+    volumes:
+      - ${PWD}/createScript.sql:/docker-entrypoint-initdb.d/createScript.sql
+      - ${PWD}/smallRelationsInsertFile.sql:/docker-entrypoint-initdb.d/smallRelationsInsertFile.sql
+    environment:
+      MYSQL_USER: eur_STUDENTID
+      MYSQL_PASSWORD: STUDENTID
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: csba
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    links:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      # PMA_ARBITRARY: 1
+      PMA_USER: eur_STUDENTID
+      PMA_PASSWORD: STUDENTID
+    restart: always
+    ports:
+      - 80:80
