@@ -123,10 +123,10 @@ cryptiles@2.x.x:
   dependencies:
     boom "2.x.x"
 
-csv-parse@1.1.9:
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-1.1.9.tgz#5010f93e052578fcab67e30e9b59129c6248ad81"
-  integrity sha1-UBD5PgUlePyrZ+MOm1kSnGJIrYE=
+csv-parse@4.4.6:
+  version "4.4.6"
+  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.4.6.tgz#08804dbe86037c46810d49ced77fa0e121f83b4f"
+  integrity sha512-VisC5TBBhOF+70zjrF9FOiqI2LZOhXK/vAWlOrqyqz3lLa+P8jzJ7L/sg90MHmkSY/brAXWwrmGSZR0tM5yi4g==
 
 dashdash@^1.12.0:
   version "1.14.1"
