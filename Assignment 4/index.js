@@ -13,9 +13,9 @@ function create_request_options(screenname) {
     headers:
     {
       'cache-control': 'no-cache',
-      'x-api-secret-key': 'HCmkt9cgY5E3mOuf8awmxOwPeQpSkXz0xcsyBOqh96w',
-      'x-api-key': '58fa9a6196b0b5059c7bdc1a',
-      'content-type': 'application/json'
+      'x-api-secret-key': process.env.apisecretkey,
+      'x-api-key': process.env.apikey,
+      'content-type': 'application/json
     },
     json: true
   };
@@ -36,8 +36,8 @@ function get_finished_options(operationid) {
     headers:
     {
       'cache-control': 'no-cache',
-      'x-api-secret-key': 'HCmkt9cgY5E3mOuf8awmxOwPeQpSkXz0xcsyBOqh96w',
-      'x-api-key': '58fa9a6196b0b5059c7bdc1a',
+      'x-api-secret-key': process.env.apisecretkey,
+      'x-api-key': process.env.apikey,
       'content-type': 'application/json'
     },
     json: true
