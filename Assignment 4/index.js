@@ -15,7 +15,7 @@ function create_request_options(screenname) {
       'cache-control': 'no-cache',
       'x-api-secret-key': process.env.apisecretkey,
       'x-api-key': process.env.apikey,
-      'content-type': 'application/json
+      'content-type': 'application/json'
     },
     json: true
   };
